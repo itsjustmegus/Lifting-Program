@@ -1,1 +1,1 @@
-# Lifting-Program
+# Lifting Program
