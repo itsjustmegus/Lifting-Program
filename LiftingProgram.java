@@ -2,7 +2,7 @@
     Name: LiftingProgram.java
     Author: Augustus Allred
     Created: 9/28/22
-    Revised:
+    Revised: 9/29/22
     Purpose: Take maxes for lifts from the user, and create a lifting program for the user
 */
 
