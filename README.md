@@ -2,7 +2,9 @@
 ## Project Description
 Design a lifting program for a user based on their input maxes for specific lifts
 # Poject Plan
-- Create variables for each lift
+- Print creative title for program
+- Create variables for user name and each lift
+- Get name from user
 - Get input for maxes from user
 - Calculate weights for each lift for each week
 - Echo input maxes
