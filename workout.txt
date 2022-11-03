@@ -1,3 +1,9 @@
 Gus
-This is your bench max: 200 lbs
-This is your back squat max: 330 lbs
+
+This is your first calculated bench:       79.3 lbs 
+
+This is your first calculated squat: 86.45 lbs 
+
+This is your first calculated deadlift: 93.60000000000001 lbs 
+
+This is your first calculated power clean:   100.75 lbs 
