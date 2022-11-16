@@ -1,9 +1,6 @@
 Gus
-
-This is your first calculated bench:       79.3 lbs 
-
-This is your first calculated squat: 86.45 lbs 
-
-This is your first calculated deadlift: 93.60000000000001 lbs 
-
-This is your first calculated power clean:   100.75 lbs 
+                 Week One
+This is your first calculated bench:           157.95  lbs
+This is your first calculated squat:           280.80  lbs
+This is your first calculated deadlift:        230.10  lbs
+This is your first calculated power clean:     153.40  lbs
