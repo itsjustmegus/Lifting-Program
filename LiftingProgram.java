@@ -2,7 +2,7 @@
     Name: LiftingProgram.java
     Author: Augustus Allred
     Created: 9/28/22
-    Revised: 11/3/22
+    Revised: 11/15/22
     Purpose: Take maxes for lifts from the user, and create a lifting program for the user
 */
 
@@ -22,14 +22,15 @@ public class LiftingProgram {
 
         // TODO: Declare variables
         String name;
-        double benchMax;
-        double squatMax;
-        double deadliftMax;
-        double cleanMax;
-        double bench;
-        double squat;
-        double deadlift;
-        double clean;
+        float benchMax;
+        float squatMax;
+        float deadliftMax;
+        float cleanMax;
+        float bench;
+        float squat;
+        float deadlift;
+        float clean;
+        float percentage;
 
         // Call title method
         printTitle();
@@ -56,26 +57,29 @@ public class LiftingProgram {
 
         // Call calculation methods
         // Week 1 calculations
-        bench = CalculateWeight(benchMax, 0.65);
-        squat = CalculateWeight(squatMax, 0.65);
-        deadlift = CalculateWeight(deadliftMax, 0.65);
-        clean = CalculateWeight(cleanMax, 0.65);
+        percentage = 0.65f;
+        bench = CalculateWeight(benchMax, percentage);
+        squat = CalculateWeight(squatMax, percentage);
+        deadlift = CalculateWeight(deadliftMax, percentage);
+        clean = CalculateWeight(cleanMax, percentage);
 
         // TODO: Display results
         // TODO: Print entered maxes
-        System.out.printf("%-10s %14s %n", "\nBench Max:", benchMax + " lbs");
-        System.out.printf("%-10s %9s %n", "Back Squat Max:", squatMax + " lbs");
-        System.out.printf("%-10s %11s %n", "Deadlift Max:", deadliftMax + " lbs");
-        System.out.printf("%-10s %12s %n", "Power Clean Max:", cleanMax + " lbs");
+        System.out.printf("%-10s %16.2f %s", "\nBench Max:", benchMax, " lbs\n");
+        System.out.printf("%-10s %11.2f %s", "Back Squat Max:", squatMax, " lbs\n");
+        System.out.printf("%-10s %13.2f %s", "Deadlift Max:", deadliftMax, " lbs\n");
+        System.out.printf("%-10s %10.2f %s", "Power Clean Max:", cleanMax, " lbs\n");
         
         // TODO: Print a schedule for each week with corresponding weights
         // Print to a text file using PrintWriter
         // Open file
         workout.println(name);
-        workout.printf("%-10s %14s %n", "\nThis is your first calculated bench:", bench + " lbs");
-        workout.printf("%-10s %9s %n", "\nThis is your first calculated squat:", squat + " lbs");
-        workout.printf("%-10s %11s %n", "\nThis is your first calculated deadlift:", deadlift + " lbs");
-        workout.printf("%-10s %12s %n", "\nThis is your first calculated power clean:", clean + " lbs");
+
+        workout.printf("%25s", "Week One");
+        workout.printf("%-10s %16.2f %s", "\nThis is your first calculated bench:", bench, " lbs\n");
+        workout.printf("%-10s %16.2f %s", "This is your first calculated squat:", squat, " lbs\n");
+        workout.printf("%-10s %13.2f %s", "This is your first calculated deadlift:", deadlift, " lbs\n");
+        workout.printf("%-10s %10.2f %s", "This is your first calculated power clean:", clean, " lbs\n");
 
         // Close file
         workout.close();
@@ -92,8 +96,8 @@ public class LiftingProgram {
     }
 
     // TODO: Method to calculate weights for each lift for each week
-    static double CalculateWeight(double lift, double percentage) {
-        double calcLift;
+    static float CalculateWeight(float lift, float percentage) {
+        float calcLift;
         // Calculate weight for each lift based on passed percentage
         calcLift = lift * percentage;
         return calcLift;
