@@ -73,13 +73,20 @@ public class LiftingProgram {
         // TODO: Print a schedule for each week with corresponding weights
         // Print to a text file using PrintWriter
         // Open file
-        workout.println(name);
+        workout.println("+----------------------------------------------------------+");
+        workout.println("                " + name + "'s Lifting Program");
+        workout.println("+----------------------------------------------------------+\n");
 
-        workout.printf("%25s", "Week One");
-        workout.printf("%-10s %16.2f %s", "\nThis is your first calculated bench:", bench, " lbs\n");
-        workout.printf("%-10s %16.2f %s", "This is your first calculated squat:", squat, " lbs\n");
-        workout.printf("%-10s %13.2f %s", "This is your first calculated deadlift:", deadlift, " lbs\n");
-        workout.printf("%-10s %10.2f %s", "This is your first calculated power clean:", clean, " lbs\n");
+        workout.printf("%32s", "Week One\n");
+        workout.println("+----------------------------------------------------------+");
+        workout.printf("|  %11s |  %-21s  | %8.2f  %3s   |%n", "Bench", "3 sets (5 reps each):", bench, "lbs");
+        workout.println("+----------------------------------------------------------+");
+        workout.printf("|  %11s |  %-21s  | %8.2f  %3s   |%n", "Squat", "3 sets (5 reps each):", squat, "lbs");
+        workout.println("+----------------------------------------------------------+");
+        workout.printf("|  %11s |  %-21s  | %8.2f  %3s   |%n", "Deadlift", "3 sets (5 reps each):", deadlift, "lbs");
+        workout.println("+----------------------------------------------------------+");
+        workout.printf("|  %11s |  %-21s  | %8.2f  %3s   |%n", "Power Clean", "3 sets (5 reps each):", clean, "lbs");
+        workout.println("+----------------------------------------------------------+");
 
         // Close file
         workout.close();
