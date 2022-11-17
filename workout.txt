@@ -1,6 +1,14 @@
-Gus
-                 Week One
-This is your first calculated bench:           157.95  lbs
-This is your first calculated squat:           280.80  lbs
-This is your first calculated deadlift:        230.10  lbs
-This is your first calculated power clean:     153.40  lbs
++----------------------------------------------------------+
+                Gus's Lifting Program
++----------------------------------------------------------+
+
+                       Week One
++----------------------------------------------------------+
+|        Bench |  3 sets (5 reps each):  |   146.25  lbs   |
++----------------------------------------------------------+
+|        Squat |  3 sets (5 reps each):  |   234.00  lbs   |
++----------------------------------------------------------+
+|     Deadlift |  3 sets (5 reps each):  |   260.00  lbs   |
++----------------------------------------------------------+
+|  Power Clean |  3 sets (5 reps each):  |   139.75  lbs   |
++----------------------------------------------------------+
